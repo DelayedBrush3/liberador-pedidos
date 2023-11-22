@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIBERADOR_PEDIDOS", "LIBERADOR_PEDIDOS.csproj", "{46C52D87-6EF0-48C3-9CAE-D24662F480D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46C52D87-6EF0-48C3-9CAE-D24662F480D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C52D87-6EF0-48C3-9CAE-D24662F480D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C52D87-6EF0-48C3-9CAE-D24662F480D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C52D87-6EF0-48C3-9CAE-D24662F480D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F8AC5F5-B142-4619-87F0-1D011F5A5ECA}
+	EndGlobalSection
+EndGlobal
