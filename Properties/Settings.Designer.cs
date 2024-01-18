@@ -12,7 +12,7 @@ namespace LIBERADOR_PEDIDOS.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.8.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,11 +26,21 @@ namespace LIBERADOR_PEDIDOS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.10.0.14;Initial Catalog=PINMEX;Persist Security Info=True;User ID=" +
-            "sa;Password=Pintumex2019")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.10.0.14;Initial Catalog=PINMEX;User ID=sa;Password=Pintumex2019")]
         public string PINMEXConnectionString {
             get {
                 return ((string)(this["PINMEXConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.10.0.14;Initial Catalog=PINMEX;Persist Security Info=True;User ID=" +
+            "SPP;Password=Pintumex2019;TrustServerCertificate=True")]
+        public string PINMEXConnectionString1 {
+            get {
+                return ((string)(this["PINMEXConnectionString1"]));
             }
         }
     }
