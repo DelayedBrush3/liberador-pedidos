@@ -45,11 +45,14 @@ namespace LIBERADOR_PEDIDOS
 
                         // Habilitamos controles.
                         lbl_autorizado2.Text = "SI ACREDITA";
-                        pedido_tb.Enabled = true;
+                        if (!pedido_tb.Enabled)
+                            pedido_tb.Enabled = true;
                     }
                     else
                     {
-                        pedido_tb.Enabled = false;
+                        if (pedido_tb.Enabled)
+                            pedido_tb.Enabled = false;
+
                         this.cleanControls();
                         MessageBox.Show("Al pedido '" + tb_pedido.Text + "' le falta el código de ruta, no se puede procesar.");
                     }
@@ -307,26 +310,23 @@ namespace LIBERADOR_PEDIDOS
         {
             try
             {
-                foreach (DataRow dr in Global.DataSet.Tables[0].Rows)
-                {
-                    cLIENTETextBox.Text = "";
-                    nOMBRE_CLIENTETextBox.Text = "";
-                    tb_saldo.Text = "";
-                    tb_total_facturar.Text = "";
-                    tb_limite_credito.Text = "";
-                    tb_forma_pago.Text = "";
-                    tOTAL_MERCADERIATextBox.Text = "";
-                    tOTAL_IMPUESTO1TextBox.Text = "";
-                    mONTO_DESCUENTO1TextBox.Text = "";
-                    eMAIL_DOC_ELECTRONICOTextBox.Text = "";
-                    bACKORDERTextBox.Text = "";
-                    bODEGATextBox.Text = "";
-                    cONDICION_PAGOTextBox.Text = "";
-                    fORMA_PAGOTextBox.Text = "";
-                    uSO_CFDITextBox.Text = "";
-                    u_CODIGO_RUTATextBox.Text = "";
-                    zONATextBox.Text = "";
-                }
+                cLIENTETextBox.Text = "";
+                nOMBRE_CLIENTETextBox.Text = "";
+                tb_saldo.Text = "";
+                tb_total_facturar.Text = "";
+                tb_limite_credito.Text = "";
+                tb_forma_pago.Text = "";
+                tOTAL_MERCADERIATextBox.Text = "";
+                tOTAL_IMPUESTO1TextBox.Text = "";
+                mONTO_DESCUENTO1TextBox.Text = "";
+                eMAIL_DOC_ELECTRONICOTextBox.Text = "";
+                bACKORDERTextBox.Text = "";
+                bODEGATextBox.Text = "";
+                cONDICION_PAGOTextBox.Text = "";
+                fORMA_PAGOTextBox.Text = "";
+                uSO_CFDITextBox.Text = "";
+                u_CODIGO_RUTATextBox.Text = "";
+                zONATextBox.Text = "";
             }
             catch (Exception e)
             {
