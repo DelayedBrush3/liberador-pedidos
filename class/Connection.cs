@@ -64,7 +64,7 @@ namespace LIBERADOR_PEDIDOS.Class
             try
             {
                 // $U $P $C $B $S Parametros de conexión de opciones configurables de softland
-                // AGUSTF Kklaus214568 PMP PINMEX 10.10.0.14 Parametros de conexión local
+                // username password compañia bdName server Parametros de conexión local
                 Arguments = Environment.GetCommandLineArgs();
 
                 if (Arguments[1] != "SA" && Arguments[1] != "sa")
